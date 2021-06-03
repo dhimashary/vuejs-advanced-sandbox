@@ -36,8 +36,8 @@ Halo semuanya, Vue JS Advance Learning sandbox ini bisa menjadi salah satu alat 
 ### 5. Nested Route
 
 1. git checkout "5.nested-route"
-2. Tambahkan route baru dengan path "profile" pada children route "/users" yang akan merender views UserProfile
-3. Tambahkan route baru dengan path "status" pada children route "/users" yang akan merender views UserStatus
+2. Tambahkan route baru dengan path "address" pada children route "/users/:id" yang akan merender views UserAddress
+3. Tambahkan route baru dengan path "status" pada children route "/users/:id" yang akan merender views UserStatus
 4. Tambahkan router-view pada komponen UserDetail
 5. [Referensi](https://router.vuejs.org/guide/essentials/nested-routes.html)
 

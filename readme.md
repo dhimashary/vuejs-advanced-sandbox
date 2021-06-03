@@ -36,16 +36,17 @@ Halo semuanya, Vue JS Advance Learning sandbox ini bisa menjadi salah satu alat 
 ### 5. Nested Route
 
 1. git checkout "5.nested-route"
-2. Tambahkan route baru dengan path "profile" pada children route "/users" yang akan merender views UserProfile
-3. Tambahkan route baru dengan path "status" pada children route "/users" yang akan merender views UserStatus
+2. Tambahkan route baru dengan path "address" pada children route "/users/:id" yang akan merender views UserAddress
+3. Tambahkan route baru dengan path "status" pada children route "/users/:id" yang akan merender views UserStatus
 4. Tambahkan router-view pada komponen UserDetail
-5. [Referensi](https://router.vuejs.org/guide/essentials/nested-routes.html)
+5. Tambahkan props berupa address dari userDetail.address ke router-view
+6. [Referensi](https://router.vuejs.org/guide/essentials/nested-routes.html)
 
 ### 6. Navigation Guard
 
 1. git checkout "6.nav-guard"
 2. Tambahkan beforeRouteEnter yang akan mengecek apakah user memiliki access_token / tidak di localStorage pada Views "Dashboard", jika user tidak memiliki access_token alihkan ke halaman login
-5. [Referensi](https://router.vuejs.org/guide/advanced/navigation-guards.html#global-before-guards)
+3. [Referensi](https://router.vuejs.org/guide/advanced/navigation-guards.html#global-before-guards)
 
 ## Vuex
 

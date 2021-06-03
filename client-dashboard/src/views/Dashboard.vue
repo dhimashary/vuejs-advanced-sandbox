@@ -1,14 +1,16 @@
 <template>
   <div class="about">
     <h1>This is Dashboard Page</h1>
-    <p>
-      Tambahkan beforeRouteEnter yang akan mengecek apakah user memiliki access_token / tidak di localStorage pada Views "Dashboard", jika user tidak memiliki access_token alihkan ke halaman login
-    </p>
+    <VisitorCount />
   </div>
 </template>
 
 <script>
+import VisitorCount from '../components/VisitorCount'
 export default {
-  name: 'Dashboard'
+  name: 'Dashboard',
+  components: {
+    VisitorCount
+  }
 }
 </script>

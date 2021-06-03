@@ -21,9 +21,13 @@ import UserItem from './UserItem'
 
 export default {
   name: 'UserList',
-  props: ['users'],
   components: {
     UserItem
+  },
+  computed: {
+    users () {
+      return this.$store.state.users
+    }
   }
 }
 </script>

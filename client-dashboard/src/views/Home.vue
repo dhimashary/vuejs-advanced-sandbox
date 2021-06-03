@@ -1,13 +1,12 @@
 <template>
   <div class="home">
     <img alt="Vue logo" src="../assets/logo.png">
-    <UserList :users="users"/>
+    <UserList />
   </div>
 </template>
 
 <script>
 import UserList from '@/components/UserList.vue'
-import axios from 'axios'
 
 export default {
   name: 'Home',
@@ -21,20 +20,11 @@ export default {
   },
   methods: {
     fetchUsers () {
-      axios({
-        method: 'GET',
-        url: 'https://jsonplaceholder.typicode.com/users'
-      })
-        .then(({ data }) => {
-          this.users = data
-        })
-        .catch(err => {
-          console.log(err)
-        })
+      // pindahkan method ini ke action
     }
   },
   created () {
-    this.fetchUsers()
+    // panggil action fetchUser disini
   }
 }
 </script>

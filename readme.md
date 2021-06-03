@@ -72,7 +72,7 @@ Halo semuanya, Vue JS Advance Learning sandbox ini bisa menjadi salah satu alat 
 2. Buatlah action dengan nama "fetchUsers" pada store, lakukan fetching menggunakan axios pada isi "fetchUsers" kalian bisa melakukan fetch ke URL [berikut](https://jsonplaceholder.typicode.com/users)
 3. Buatlah mutation dengan nama "SET_USERS" pada store yang berfungsi untuk merubah state users sesuai dengan payload yang dikirim.
 4. Panggil mutation SET_USERS ketika berhasil mendapatkan data users di action fetchUsers.
-5. Panggil action fetchUsers pada component UserList di lifecycle "created".
+5. Panggil action fetchUsers pada views Home di lifecycle "created".
 6. [Referensi](https://vuex.vuejs.org/guide/actions.html)
 7. Notes:
    - Dalam action kalian bisa melakukan proses async seperti melakukan fetch ke DB dan sebagainya

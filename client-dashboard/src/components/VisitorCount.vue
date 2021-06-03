@@ -1,17 +1,22 @@
 <template>
   <div>
     <h1>Visitor Count: {{ count }}</h1>
+    <AddCount />
   </div>
 </template>
 
 <script>
+import AddCount from './AddCount'
+
 export default {
   name: 'Visitor Count',
   computed: {
     count () {
-      // ambil count dari vuex state, ubah angka 0 dibawah ini
-      return 0
+      return this.$store.state.count
     }
+  },
+  components: {
+    AddCount
   }
 }
 </script>

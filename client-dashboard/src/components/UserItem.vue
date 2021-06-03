@@ -19,7 +19,12 @@ export default {
   props: ['user', 'i'],
   methods: {
     goDetail () {
-      // push ke path sesuai dengan user.id
+      this.$router.push({
+        name: 'UserDetail',
+        params: {
+          id: this.user.id
+        }
+      })
     }
   }
 }

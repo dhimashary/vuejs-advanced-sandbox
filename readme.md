@@ -39,13 +39,14 @@ Halo semuanya, Vue JS Advance Learning sandbox ini bisa menjadi salah satu alat 
 2. Tambahkan route baru dengan path "address" pada children route "/users/:id" yang akan merender views UserAddress
 3. Tambahkan route baru dengan path "status" pada children route "/users/:id" yang akan merender views UserStatus
 4. Tambahkan router-view pada komponen UserDetail
-5. [Referensi](https://router.vuejs.org/guide/essentials/nested-routes.html)
+5. Tambahkan props berupa address dari userDetail.address ke router-view
+6. [Referensi](https://router.vuejs.org/guide/essentials/nested-routes.html)
 
 ### 6. Navigation Guard
 
 1. git checkout "6.nav-guard"
 2. Tambahkan beforeRouteEnter yang akan mengecek apakah user memiliki access_token / tidak di localStorage pada Views "Dashboard", jika user tidak memiliki access_token alihkan ke halaman login
-5. [Referensi](https://router.vuejs.org/guide/advanced/navigation-guards.html#global-before-guards)
+3. [Referensi](https://router.vuejs.org/guide/advanced/navigation-guards.html#global-before-guards)
 
 ## Vuex
 
@@ -71,7 +72,7 @@ Halo semuanya, Vue JS Advance Learning sandbox ini bisa menjadi salah satu alat 
 2. Buatlah action dengan nama "fetchUsers" pada store, lakukan fetching menggunakan axios pada isi "fetchUsers" kalian bisa melakukan fetch ke URL [berikut](https://jsonplaceholder.typicode.com/users)
 3. Buatlah mutation dengan nama "SET_USERS" pada store yang berfungsi untuk merubah state users sesuai dengan payload yang dikirim.
 4. Panggil mutation SET_USERS ketika berhasil mendapatkan data users di action fetchUsers.
-5. Panggil action fetchUsers pada component UserList di lifecycle "created".
+5. Panggil action fetchUsers pada views Home di lifecycle "created".
 6. [Referensi](https://vuex.vuejs.org/guide/actions.html)
 7. Notes:
    - Dalam action kalian bisa melakukan proses async seperti melakukan fetch ke DB dan sebagainya
